@@ -20,8 +20,8 @@ app.listen(5000,async ()=>{
     // await data.save();
     // console.log(data);
     const TweetRepo=new TweetRepository();
-    const data=await TweetRepo.getWithComments('65008c9c8fd9130176369995');
-    console.log(data)
+    const data=await TweetRepo.getAll(4,4);
+    console.log(data[0].contentWithEmail);
 
 
 })
